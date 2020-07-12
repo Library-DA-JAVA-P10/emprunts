@@ -9,4 +9,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(path = "emprunts")
 public interface EmpruntEntityRepository extends PagingAndSortingRepository<EmpruntEntity, Long> {
     Page<EmpruntEntity> findByExemplaireBarcode(String exemplaireBarcode, Pageable paging);
+    Page<EmpruntEntity> findEmpruntEntitiesByUserId(String userId, Pageable paging);
 }

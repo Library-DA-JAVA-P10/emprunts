@@ -17,4 +17,5 @@ public class EmpruntEntity {
     private String exemplaireBarcode;
     private Date dateEmprunt;
     private Date dateRetour;
+    private Boolean isExtended;
 }
